@@ -59,6 +59,5 @@ func main() {
 	b := &B{}
 	b.Fill(7)
 
-	
 	fmt.Println(b.Count())
 }
