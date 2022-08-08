@@ -1,3 +1,4 @@
+// https://go.dev/play/p/mvnVWaRZJs7
 package main
 
 import (
@@ -20,7 +21,6 @@ func (b *B) Count() int {
 	for i := 0; i < len(b.s); i++ {
 		if b.Valid(i) {
 			count++
-			b.Pr(i)
 		}
 	}
 	return count
@@ -56,8 +56,11 @@ func (b *B) Fill(j int) *B {
 }
 
 func main() {
-	b := &B{}
-	b.Fill(7)
+	
+	for i := 1; i < 30; i++ {
+		b := &B{}
+		b.Fill(i)
+		fmt.Printf("%d: %d\n",i, b.Count())
+	}
 
-	fmt.Println(b.Count())
 }
