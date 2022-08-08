@@ -1,4 +1,5 @@
 package brute
+
 import (
 	"fmt"
 	"math"
@@ -53,4 +54,3 @@ func (b *B) Fill(j int) *B {
 	}
 	return b
 }
-

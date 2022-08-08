@@ -56,11 +56,11 @@ func (b *B) Fill(j int) *B {
 }
 
 func main() {
-	
+
 	for i := 1; i < 30; i++ {
 		b := &B{}
 		b.Fill(i)
-		fmt.Printf("%d: %d\n",i, b.Count())
+		fmt.Printf("%d: %d\n", i, b.Count())
 	}
 
 }
