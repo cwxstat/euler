@@ -5,7 +5,23 @@ import (
 	"github.com/cwxstat/euler/114/brute"
 )
 
-func ExampleB_Fill()  {
+func ExampleB_Valid() {
+
+	b := &brute.B{}
+	b.Fill(7)
+	for i := 0; i < 15; i++ {
+		if b.Valid(i) {
+			b.Pr(i)
+		}
+	}
+	// Output:
+	// 0000000
+	// 0000111
+	// 0001110
+
+}
+
+func ExampleB_Fill() {
 
 	for i := 3; i < 10; i++ {
 		b := &brute.B{}
