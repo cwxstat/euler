@@ -10,6 +10,6 @@
 ```bash
 Badge: https://pkg.go.dev/badge/
 
-git tag -a v0.0.3 -m "Documentation test"
+git tag -a v0.0.4 -m "Documentation test"
 
 ```

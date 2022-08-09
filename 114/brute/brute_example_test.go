@@ -5,7 +5,7 @@ import (
 	"github.com/cwxstat/euler/114/brute"
 )
 
-func ExampleFill() {
+func ExampleB_Fill()  {
 
 	for i := 3; i < 10; i++ {
 		b := &brute.B{}
